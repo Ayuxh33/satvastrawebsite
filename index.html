@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Sarala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Julius+Sans+One&family=Sarala&display=swap" rel="stylesheet">
+    
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    html{
+        font-size:62.5% ;
+    }
+    .title{
+        display: flex;
+        margin-left: 40rem;
+    }
+    .title img{
+        width: 20rem;
+        height:20rem;
+    }
+    .title h1{
+        float: right;
+        font-size: 6rem;
+        font-weight: bold;
+        margin-top: 6rem;
+        color: rgb(27, 179, 21);
+    }
+
+    .mountain {
+        position: relative;
+    }
+
+    .mountain img {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .text-block {
+        font-family: 'Righteous', cursive;
+        position: absolute;
+        top: 30rem;
+        left: 60rem;
+        font-size: 6rem;
+        color: rgb(116, 0, 0);
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+
+    .block {
+        width: 100%;
+        height: 40rem;
+        background-color: aqua;
+    }
+
+    .block blockquote {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding-top: 15rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        font-style: italic;
+        font-family: 'Julius Sans One', sans-serif;
+        color: rgb(45, 42, 42);
+
+    }
+
+    .slider {
+        width: 70rem;
+        height: 45rem;
+        background: url(photos/logo.png);
+        background-repeat: no-repeat;
+        margin: 10rem auto;
+        animation: slide 30s infinite;
+    }
+
+    @keyframes slide {
+        25% {
+            background: url(photos/logo.png);
+        }
+
+        50% {
+            background: url(photos/herb.jpg);
+        }
+
+        75% {
+            background: url(photos/logo.png);
+        }
+
+        100% {
+            background: url(photos/herb.jpg);
+        }
+    }
+
+    .para p {
+
+
+        text-align: center;
+        margin-left: 30rem;
+        margin-right: 30rem;
+        padding: 5rem;
+        font-family: 'Sarala', sans-serif;
+        font-size: 2rem;
+    }
+
+    .sample h1 {
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 6rem;
+    }
+
+    .photo {
+        display: flex;
+        margin-top: 5rem;
+       
+    }
+
+    .row {
+        flex: 50%;
+        padding: 5rem 1rem 2rem 5rem;
+        position: relative;
+
+    }
+
+    .row img {
+
+
+        border-radius: 2rem;
+
+    }
+    .text {
+        font-family: 'Righteous', cursive;
+        position: absolute;
+        top: 70rem;
+        left:16rem;
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+
+    .row1 {
+        flex: 50%;
+        padding: 5rem 5rem 2rem 1rem;
+        position: relative;
+    }
+
+    .row1 img {
+        border-radius: 2rem;
+    }
+    .text1{
+        font-family: 'Righteous', cursive;
+        position: absolute;
+        top: 70rem;
+        left:2rem;
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .row2 {
+        flex: 50%;
+        padding: 0rem 5rem 2rem 5rem;
+        position: relative;
+    }
+
+    .row2 img {
+        border-radius: 2rrem;
+    }
+.text2{
+    font-family: 'Righteous', cursive;
+        position: absolute;
+        top: 65rem;
+        left:56rem;
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+}
+.about{
+    width: 100%;
+    height: 80rem;
+    background-color: rgb(73, 172, 157);
+}
+.about h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 10rem;
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+.about p{
+    color:aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    
+}
+form{
+    margin-left: 50rem;
+    margin-top: 3rem;
+   
+}
+.fname label{
+    font-size: 2rem;
+    padding: 1rem;
+}
+#fname{
+    width: 50rem;
+    padding: 0.5rem;
+}
+.lname label{
+    font-size: 2rem;
+    padding: 1rem;
+}
+#lname{
+    width: 50rem;
+    padding: 0.5rem;
+}
+.email label{
+    font-size: 2rem;
+    padding: 1rem;
+}
+#ename{
+    width: 50rem;
+    padding: 0.5rem;
+}
+.message label{
+    font-size: 2rem;
+    padding: 1rem;
+}
+#mname{
+    width: 50rem;
+    padding: 2rem;
+}
+.sub{
+    background-color: rgb(2, 65, 70);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: antiquewhite;
+}
+.contact{
+    display: flex;
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 40rem;
+}
+.logo{
+    flex: 50%;
+}
+.logo img{
+    width: 40rem;
+    height: 40rem;
+}
+.us{
+    flex: 50%;
+    margin-top: 10rem;
+    margin-left: 3.5rem;
+}
+.us h1{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.us p{
+    font-size: 1.5rem;
+    padding: 0.2rem 0.2rem 0.2rem 1rem;
+
+}
+footer{
+    background-color: rgb(46, 46, 46);
+    color: #f3f3f3;
+    text-align: right;
+}
+footer h4{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+@media(max-width:1150px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:1000px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width:656px){
+    html{
+        font-size: 35%;
+    }
+}
+@media(max-width:545px){
+    html{
+        font-size: 25%;
+    }
+}
+</style>
+
+<body>
+
+    
+    <div class="title">
+        <img src="photos/logo.png" alt="logo">
+        <h1>Satvastra</h1>
+    </div>
+    <div class="mountain">
+        <img src="photos\mountain.jpeg" alt="mountain">
+        <div class="text-block">
+            <h1>Clothing</h1>
+            <h1>from</h1>
+            <h1>the</h1>
+            <h1>Himalayas</h1>
+        </div>
+    
+        <div class="block">
+            <blockquote>" A hug from Nature
+                To reform the future"</blockquote>
+        </div>
+        <div class="slider">
+
+        </div>
+        <div class="para">
+            <p>Satvastra is an innovative startup company that promotes sustainable and ethical fashion by producing
+                organic clothing made from Himalayan nettle.<br><br> Satvastra aspires to design apparel that is both
+                stylish
+                and sustainable since we believe that fashion can be both fashionable and environmentally friendly.</p>
+
+        </div>
+        <hr>
+        <div class="sample">
+            <h1>Our Product Samples</h1>
+        </div>
+        
+            <div class="photo">
+                <div class="row">
+                    <img src="photos/cloth.jpg" alt="cloth">
+                    <div class="text">
+                        <h2>Nettle and Wool Dress</h2>
+                    </div>
+                </div>
+                
+                <div class="row1">
+                    <img src="photos/shawl.jpg" alt="shawl">
+                    <div class="text1">
+                        <h2>100 % Himalayan Nettle Hand Woven shawl</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row2">
+                <img src="photos/topi.jpg" alt="topi">
+                <div class="text2">
+                    <h2>Nettle and Wool Topi</h2>
+                </div>
+            </div>
+        <div class="about">
+            <h2>About Us</h2>
+            <p>Please if you have any queries or want to discuss about any products feel free to contact us any time. <br>Thank you</p>
+                <form >
+                    <div class="fname">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="lname">
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div class="email">
+                    <label for="ename">Email:</label><br>
+                    <input type="email" id="ename" name="ename" required>
+                </div>
+                <div class="Message">
+                    <label for="mname">Message:</label><br>
+                    <input type="text" id="mname" name="mname" required>
+                </div>
+                <button class="sub" onclick="changeText(this)">Submit</button>
+                  </form>
+        </div>
+        <div class="contact">
+            
+            <div class="logo">
+                <img src="photos/logo.png" alt="logo">
+            </div>
+            <div class="us">
+                <h1>Contact Us</h1>
+                <p>Phone:+9779815123943</p>
+                <p>Email:@satva_stra</p>
+                <p>Insta:@satva_stra</p>
+            </div>
+
+        </div>
+        <footer>
+       <h4>Satvastra &copy;Designed and Developed by Aashish</h4>
+        </footer>
+        <script>
+            function changeText(id) {
+              id.innerHTML = "Thank You For Submitting";
+            }
+            </script>
+            
+</body>
+
+</html>
